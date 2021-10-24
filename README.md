@@ -4,8 +4,6 @@ Here you can connect with different people, follow them see, like and create pos
 
 To use this project, clone it in your project directory, using git clone.
 
-git clone https://github.com/Nikhil-pahal-js/UnSocial-App.git
-
 Install dependencies:
 
 To install dependencies go to server folder 'cd server' and client 'cd client'.
@@ -15,3 +13,5 @@ For e.g - 'npm install express'.
 
 Then go to server and run 'npm run nodemon', and run 'npm start' in the client side.
 and it is ready to use.
+
+git clone https://github.com/Nikhil-pahal-js/UnSocial-App.git

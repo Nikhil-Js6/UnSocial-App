@@ -14,4 +14,4 @@ For e.g - 'npm install express'.
 Then go to server and run 'npm run nodemon', and run 'npm start' in the client side.
 and it is ready to use.
 
-git clone https://github.com/Nikhil-pahal-js/UnSocial-App.git
+  git clone https://github.com/Nikhil-pahal-js/UnSocial-App.git

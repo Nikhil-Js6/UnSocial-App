@@ -1,0 +1,59 @@
+.sidebar {
+    flex: 2.5;
+    height: calc(100vh - 50px);
+    overflow-y: scroll;
+    position: sticky;
+    top: 50px;
+}
+.sidebarWrapper {
+    padding: 20px;
+}
+.sidebarList {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+.sidebarListItem {
+    margin-bottom: 16px;
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+}
+.sidebarListItem .sidebarListItemText {
+    margin-left: 15px;
+}
+.sidebarButton {
+    width: 150px;
+    padding: 8px;
+    border-radius: 7px;
+    font-weight: 600;
+    background-color: #fff;
+    border: .7px solix black;
+    color: black;
+    cursor: pointer;
+    margin-top: 1rem;
+}
+.sidebarButton:hover{
+    background-color: #000;
+    color: #fff;
+}
+.sidebarWrapper hr {
+    margin: 1.25rem 0;
+}
+.sidebarFriendsList {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+.sidebarFriend {
+    display: flex;
+    align-items: center;
+    margin-bottom: 14px;
+}
+.sidebarFriend img {
+    width: 32px;
+    height: 32px;
+    border-radius: 50%;
+    object-fit: cover;
+    margin-right: 10px;
+}

@@ -169,3 +169,7 @@
 .profileFollowButton:focus{
     outline: none;
 }
+.followWrapper{
+    display: flex;
+    align-items: center;
+}

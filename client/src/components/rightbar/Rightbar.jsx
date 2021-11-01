@@ -18,10 +18,10 @@ function Rightbar({ user }) {
     useEffect(() => {
       const getFriends = async () => {
           try {
-            const friendList = await axios.get("/users/friends/" + user._id);
-            setFriends(friendList.data);
+             const friendList = await axios.get("/users/friends/" + user._id);
+             setFriends(friendList.data);
           }catch(err) {
-            console.log(err);
+              console.log(err);
           }
       };
       getFriends();
@@ -55,30 +55,29 @@ function Rightbar({ user }) {
     return (
       <>
         <div className="bdayContainer">
-          <img className="bdayImg" src="assets/gift.png" alt="" />
-          <span className="bdayText">
-            <b>Pola Foster</b> and <b>3 other friends</b> have a birthday today.
-          </span>
+            <img className="bdayImg" src="assets/gift.png" alt="" />
+            <span className="bdayText">
+              <b>Pola Foster</b> and <b>3 other friends</b> have a birthday today.
+            </span>
         </div>
-        {
-          ad
-          ? <div className="adDiv">
-              <h4>Sponsored:</h4>
-              <img className="adImage" src="assets/ad.png" alt="" />
-              <Close className="close" onClick={handleAd}/>
-            </div>
-
-          : <div className="nonad">
+        { ad
+            ? <div className="adDiv">
                 <h4>Sponsored:</h4>
-                <div className="adremoveContent">
-                    <h4>Ad removed</h4>
-                    <span className="nonadbottom">
-                      <p onClick={handleAd}>Undo</p>
-                      <p>Tell us Why?</p>
-                    </span>
-                </div>
-             </div>
-         }
+                <img className="adImage" src="assets/ad.png" alt="" />
+                <Close className="close" onClick={handleAd}/>
+              </div>
+
+            : <div className="nonad">
+                  <h4>Sponsored:</h4>
+                  <div className="adremoveContent">
+                      <h4>Ad removed</h4>
+                      <span className="nonadbottom">
+                        <p onClick={handleAd}>Undo</p>
+                        <p>Tell us Why?</p>
+                      </span>
+                  </div>
+              </div>
+          }
 
         <h4 className="rightbarTitle">Online Friends</h4>
         <ul className="rightbarFriendList">
@@ -96,9 +95,9 @@ function Rightbar({ user }) {
       { currentUser?.username !== user.username &&
           <button className="profileFollowButton" onClick={handleFollow}>
               {followed
-                ? <div followWrapper onClick={() => setFollowed(!followed)}>Unfollow <Remove /></div>
-                : <div followWrapper onClick={() => setFollowed(!followed)}>Follow <Add /></div>
-              }
+                  ? <div className="followWrapper" onClick={() => setFollowed(!followed)}>Unfollow <Remove /></div>
+                  : <div className="followWrapper" onClick={() => setFollowed(!followed)}>Follow <Add /></div>
+               }
           </button>
       }
         <h4 className="rightbarTitle">User information</h4>

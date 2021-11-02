@@ -57,7 +57,7 @@ function Share() {
                 </div>
                 <hr/>
                 {file && (
-                    <div className="shareImgContainer">           {/* createObjectURL: Creates a pseudo urll for a file*/}
+                    <div className="shareImgContainer">           // createObjectURL: Creates a pseudo url for a file
                         <img className='shareImg' src={URL.createObjectURL(file)} alt=""/>
                         <Cancel className='cancelShareImg' onClick={() => setFile("")}/>
                     </div>
@@ -70,7 +70,7 @@ function Share() {
                             <input
                                 style={{ display: 'none' }}
                                 type="file" id="file"
-                                accept='.png, .jpg, .jpeg, jiff'
+                                accept='.png, .jpg, .jpeg'
                                 onChange={(e) => setFile(e.target.files[0])}
                             />
                         </label>
@@ -86,7 +86,6 @@ function Share() {
                             <EmojiEmotions htmlColor="goldenrod" className="shareIcon"/>
                             <span>Feelings</span>
                         </div>
-
                     </div>
                     <button type='submit'>Share</button>
                 </form>

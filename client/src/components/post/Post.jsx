@@ -26,7 +26,7 @@ function Post({ post }) {
 
     const handleLikes = () => {
         try {
-            axios.put("/posts/" + post._id + "/like", { userId: currentUser._id});
+            axios.put("/posts/" + post._id + "/like", { userId: currentUser._id });
         }catch(err) {
             console.log(err);
         }
@@ -39,7 +39,7 @@ function Post({ post }) {
                 <div className="postTop">
                     <div className="postTopLeft">
                         <Link to={`profile/${user.username}`} className="postTopLeft" style={{textDecoration:'none', color:'inherit'}}>
-                            <img className="postProfileImage" src={ user.profilePicture || `${PF}person/noAvatar.png`} alt=""/>
+                            <img className="postProfileImage" src={ user.profilePicture || `${PF}person/noAvatar.png` } alt=""/>
                             <span className="postUsername">{ currentUser._id === post.userId ? "You" : user.username }</span>
                             <span className="postTime">{format(post.createdAt)}</span>
                         </Link>
@@ -49,7 +49,7 @@ function Post({ post }) {
                     </div>
                 </div>
                 <div className="postCenter">
-                    <span className="postText">{post?.desc}</span>
+                    <span className="postText">{ post?.desc }</span>
                     <img className="postImage" src={PF + post?.img} alt="post-img"/>
                 </div>
                 <div className="postBottom">
@@ -59,7 +59,7 @@ function Post({ post }) {
                         <span className="postLikeCount">{likes} People liked it.</span>
                     </div>
                     <div className="postBottomRight">
-                        <span className="postComment">{comment > 1 ? `${comment} comments` : `${comment} comment`}</span>
+                        <span className="postComment">{ comment > 1 ? `${comment} comments` : `${comment} comment` }</span>
                     </div>
                 </div>
             </div>

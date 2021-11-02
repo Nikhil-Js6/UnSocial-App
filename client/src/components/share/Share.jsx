@@ -58,7 +58,7 @@ function Share() {
                 <hr/>
                 {file && (
                     <div className="shareImgContainer">           // createObjectURL: Creates a pseudo url for a file
-                        <img className='shareImg' src={URL.createObjectURL(file)} alt=""/>
+                        <img className='shareImg' src={ URL.createObjectURL(file) } alt=""/>
                         <Cancel className='cancelShareImg' onClick={() => setFile("")}/>
                     </div>
                 )}
@@ -71,7 +71,7 @@ function Share() {
                                 style={{ display: 'none' }}
                                 type="file" id="file"
                                 accept='.png, .jpg, .jpeg'
-                                onChange={(e) => setFile(e.target.files[0])}
+                                onChange={ (e) => setFile(e.target.files[0]) }
                             />
                         </label>
                         <div className="shareOption">

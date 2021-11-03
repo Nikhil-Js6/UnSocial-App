@@ -20,11 +20,13 @@ mongoose.connect(process.env.LCL_DB_URL, { useUnifiedTopology: true }, () => {
 
 app.use("/images", express.static(path.join(__dirname, "public/images")));
 
-// Middlewares:
+// Middlewares
 
 app.use(express.json());
 app.use(helmet());
 app.use(morgan('common'));
+
+// Routes
 
 app.use("/api/auth", authRoute);
 app.use("/api/users", userRoute);

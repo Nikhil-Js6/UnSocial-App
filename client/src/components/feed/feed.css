@@ -1,0 +1,7 @@
+.feed{
+    flex: 6;
+    height: cal(100vh - 50px);
+    position: sticky;
+    top: 50px;
+    margin: 0 auto;
+}

@@ -8,6 +8,9 @@ const multer = require("multer");
 const userRoute = require("./routes/users");
 const authRoute = require("./routes/auth");
 const postRoute = require("./routes/posts");
+const uploadRoute = require("./routes/upload");
+const conversationsRoute = require("./routes/conversations");
+const messagesRoute = require("./routes/messages");
 
 const app = express();
 
@@ -23,28 +26,12 @@ app.use(express.json());
 app.use(helmet());
 app.use(morgan('common'));
 
-const storage = multer.diskStorage({
-     destination: (req, file, cb) => {
-          cb(null, "public/images");
-     },
-     filename: (req, file, cb) => {
-          cb(null, file.originalname);
-     }
-});
-
-const upload = multer({storage});
-
-app.post("/api/upload", upload.single("file"), (req, res) => {
-     try {
-         return res.status(200).json({ message: "File uploaded Successfully"});    
-     }catch(err) {
-          res.status(500).json(err);
-     }
-});
-
 app.use("/api/auth", authRoute);
 app.use("/api/users", userRoute);
 app.use("/api/posts", postRoute);
+app.use("/api/upload", uploadRoute);
+app.use("/api/conversations", conversationsRoute);
+app.use("/api/messages", messagesRoute);
 
 let PORT = process.env.PORT || 3300;
 

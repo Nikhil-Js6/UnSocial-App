@@ -1,0 +1,88 @@
+.register{
+    width: 100vw - 10px;
+    height: 92vh;
+    display: flex;
+    background-color: #f0f2f5;
+    align-items: center;
+    justify-content: center;
+}
+.registerWrapper{
+    width: 70%;
+    height: 70%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.registerLeft,.registerRight{
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+.registerLogo{
+    font-size: 52px;
+    font-weight: 700;
+    color: #1775ee;
+}
+.registerDesc{
+    font-size: 24px;
+}
+.registerBox{
+    height: 360px;
+    padding: 20px;
+    border-radius: 10px;
+    background-color: #fff;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+.registerBox:hover{
+    border: 1px solid #1775ee;
+}
+.inputWrapper{
+    display: flex;
+    position: relative;
+}
+.registerInput{
+    height: 40px;
+    font-size: 16px;
+    width: 94%;
+    border: 1px solid grey;
+    padding-left: 20px;
+    border-radius: 10px;
+}
+.registerInput:focus{
+    outline: none;
+}
+.visibiltyIcon{
+    position: absolute;
+    top: 10px;
+    right: 16px;
+    cursor: pointer;
+}
+.registerButton{
+    width: 100%;
+    height: 40px;
+    background-color: #1775ee;
+    color: #fff;
+    font-size: 20px;
+    font-weight: 500;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+}
+.loginLink{
+   text-align: center;
+}
+.createButton{
+    width: 60%;
+    align-self: center;
+    height: 40px;
+    background-color: #42b72a;
+    color: #fff;
+    font-size: 18px;
+    font-weight: 500;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+}

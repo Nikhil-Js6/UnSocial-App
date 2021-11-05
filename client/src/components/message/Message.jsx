@@ -6,7 +6,7 @@ export default function Message({ user, message, own }) {
     return (
         <div className={own ? 'own message' : 'message'}>
             <div className='messageTop'>
-                <img className='messageImg' src={user?.profilePicture ? user.profilePicture : "https://www.imagesjunction.com/images/img/beautiful_girls_dp_wallpapers.jpg"} alt="senderImg"/>
+                <img className='messageImg' src={user?.profilePicture ? user.profilePicture : PF + "noAvatar.png"} alt="senderImg"/>
                 <p className='messageBody'>{message.text}</p>
             </div>
             <div className='messageBottom'>{format(message.createdAt)}</div>

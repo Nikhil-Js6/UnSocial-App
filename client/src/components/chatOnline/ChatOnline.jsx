@@ -8,28 +8,28 @@ export default function ChatOnline() {
                     <img className='chatOnlineUserImg' src="https://wallpaperaccess.com/full/945376.jpg" alt=""/>
                     <span className='chatOnilneBadge'></span>
                 </div>
-                <span className='chatOnlineUsername'>Baby</span>
+                <span className='chatOnlineUsername'>Jenny</span>
             </div>
             <div className='chatOnlineFriend'>
                 <div className='onlineImgWrapper'>
                     <img className='chatOnlineUserImg' src="https://wallpaperaccess.com/full/945376.jpg" alt=""/>
                     <span className='chatOnilneBadge'></span>
                 </div>
-                <span className='chatOnlineUsername'>Baby</span>
+                <span className='chatOnlineUsername'>Zoe</span>
             </div>
             <div className='chatOnlineFriend'>
                 <div className='onlineImgWrapper'>
                     <img className='chatOnlineUserImg' src="https://wallpaperaccess.com/full/945376.jpg" alt=""/>
                     <span className='chatOnilneBadge'></span>
                 </div>
-                <span className='chatOnlineUsername'>Baby</span>
+                <span className='chatOnlineUsername'>Olly</span>
             </div>
             <div className='chatOnlineFriend'>
                 <div className='onlineImgWrapper'>
                     <img className='chatOnlineUserImg' src="https://wallpaperaccess.com/full/945376.jpg" alt=""/>
                     <span className='chatOnilneBadge'></span>
                 </div>
-                <span className='chatOnlineUsername'>Baby</span>
+                <span className='chatOnlineUsername'>User</span>
             </div>
         </div>
     )

@@ -4,7 +4,7 @@ import Sidebar from '../../components/sidebar/Sidebar';
 import Feed from '../../components/feed/Feed';
 import Rightbar from '../../components/rightbar/Rightbar';
 import Topbar from '../../components/topbar/Topbar';
-import { axiosInstance } from '../../config';
+import axios from 'axios';
 import { useParams } from 'react-router';
 import { Loop } from '@mui/icons-material';
 import { AuthContext } from '../../context/authContext';
@@ -20,7 +20,7 @@ function Profile() {
 
     useEffect(() => {
         const fetchUser = async () => {
-            const res = await axiosInstance.get(`/users?username=${username}`)
+            const res = await axios.get(`/users?username=${username}`)
             setUser(res.data);
         }
         fetchUser();

@@ -6,8 +6,8 @@ Here you can connect with different people, follow them see, like and create pos
 
 Install dependencies:
 
-To install dependencies go to server folder 'cd server' and client 'cd client'.
-In the client and server folders run 'npm install', to install all server side dependencies.
+To install dependencies go to server and client folders.
+In the client and server folders run 'npm install' or 'yarn add' , to install all server side dependencies.
 or you can also manually install them by running 'npm install' with dependency names.
 For e.g - 'npm install express'.
 
